@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ASML;
+using System;
 
 namespace Runner
 {
@@ -19,8 +16,25 @@ namespace Runner
                 switch (Console.ReadKey().KeyChar)
                 {
                     case '1':
+                        SumOfMultiple sumOfMultiple = new SumOfMultiple();
+                        Console.WriteLine("\nPlease enter the limit:");
+
+                        int inputInt;
+
+                        while (!int.TryParse(Console.ReadLine(), out inputInt))
+                        {
+                            Console.WriteLine("Incorrect input, please enter correct integer value.");
+                        }
+
+                        Console.WriteLine("The answer is {0}", sumOfMultiple.FindSumOfNatNrs(inputInt));
                         break;
                     case '2':
+                        SequenceAnalysis sequenceAnalysis = new SequenceAnalysis();
+                        Console.WriteLine("\nPlease provide input string:");
+
+                        string inputStr = Console.ReadLine();
+
+                        Console.WriteLine("The answer is {0}", sequenceAnalysis.FindUppWordAndOrderChars(inputStr));
                         break;
                     default:
                         return 0;

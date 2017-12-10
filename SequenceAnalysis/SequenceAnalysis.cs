@@ -17,7 +17,7 @@ namespace ASML
             return new string(
                 input
                 .Split(' ')
-                .Where(x => x.All(y => y > 'A' && y < 'Z'))
+                .Where(x => x.All(y => y >= 'A' && y <= 'Z'))
                 .SelectMany(x => x)
                 .OrderBy(y => y)
                 .ToArray());

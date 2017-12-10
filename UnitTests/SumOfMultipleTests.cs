@@ -25,7 +25,16 @@ namespace UnitTests
             SumOfMultiple s = new SumOfMultiple();
 
             Assert.AreEqual(0, s.FindSumOfNatNrs(-20));
+            Assert.AreEqual(0, s.FindSumOfNatNrs(int.MinValue));
+        }
 
+        [TestMethod]
+        public void TestFindSumOfNatNrsLargeNrs()
+        {
+            SumOfMultiple s = new SumOfMultiple();
+
+            Assert.AreEqual(15300, s.FindSumOfNatNrs(byte.MaxValue));
+            Assert.AreEqual(1076060070465310994, s.FindSumOfNatNrs(int.MaxValue));
         }
     }
 }

@@ -6,9 +6,9 @@
         /// Find the sum of all natural numbers that are a 
         /// multiple of 3 or 5 below a limit provided as input.
         /// </summary>
-        public int FindSumOfNatNrs(int limit)
+        public long FindSumOfNatNrs(int limit)
         {
-            int sumOfNatNrs = 0;
+            long sumOfNatNrs = 0;
 
             if (limit < 3)
                 return 0;
