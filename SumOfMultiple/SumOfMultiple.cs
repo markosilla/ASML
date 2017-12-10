@@ -10,9 +10,6 @@
         {
             long sumOfNatNrs = 0;
 
-            if (limit < 3)
-                return 0;
-
             for (int i = limit; i >= 3; i--)
             {
                 if (i % 3 == 0 || i % 5 == 0)
