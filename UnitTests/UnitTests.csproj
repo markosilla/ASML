@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="SumOfMultipleTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceAnalysisTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
